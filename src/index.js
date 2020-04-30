@@ -23,16 +23,19 @@ bot.on("ready", ()=>{
     console.log(bot.user.username +' apresentando para o serviço mestre!')
 });
 
-bot.on("message",(msg)=> {
-    if(!msg.content.startsWith(process.env.PREFIX) || msg.author.bot) return;
+bot.on('guildMemberAdd', member => {
+    const channel = member.guild.channels.cache.find(ch => ch.name === 'taverna-do-vader');
+    if (!channel) return;
+    channel.send(`Bem vindo ao **Darth Code**. ${member}, este é o território do Lord Vader, tenha respeito por aqui.`);
 
+  });
+bot.on("message",(msg)=> {
+    if(!msg.content.startsWith(process.env.PREFIX) || msg.author.username == "DMBot") return;
     const args = msg.content.slice(process.env.PREFIX.length).split(" ");
     const command = args.shift();
-    
     try{
         bot.commands.get(command).execute(bot,msg,args);
     } catch(err){
-        console.log(err)
-        return msg.reply("que?!")
+        return msg.reply("é o que fi?!")
     }
 })

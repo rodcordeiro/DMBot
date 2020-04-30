@@ -19,6 +19,7 @@ class Character{
         this.race = functions.randSelect(options.races);
         this.class= functions.randSelect(options.classes);
         this.classExpertise = this.class.classExpertise;
+        this.weapons = this.class.weapons;
         this.specialHabilities = this.class.specialHabilities;
         this.gender = functions.randSelect(options.genders);
         this.name = functions.randSelect(options.names) +" "+functions.randSelect(options.nicknames);
@@ -31,6 +32,7 @@ class Character{
 const execute = (bot,msg,args)=>{
     var character = new Character();
     functions.updateAttributes(character);
+
     const characterSheet = `Aqui está sua ficha:\n
 _**Nome:**_ ${character.name}      _**Sexo:**_ ${character.gender}*
 
@@ -49,6 +51,9 @@ _**Pontos de Vida:**_ ${character.stats.PV}
  _**Destreza:**_ ${character.attributes.DEX}  _**Agilidade:**_ ${character.attributes.AGI}   
  _**Inteligência:**_ ${character.attributes.INT}    _**Força de Vontade:**_ ${character.attributes.WILL},
  _**Percepção:**_ ${character.attributes.PER}   _**Carisma:**_ ${character.attributes.CAR}
+
+**--Armas**
+${character.weapons}
 `;
 
     return msg.reply(characterSheet)

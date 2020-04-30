@@ -103,6 +103,7 @@ module.exports= {
         weakness:['Modelo Especial'],
     }
     ],
+    
     classes:[{
         class: 'Alquimista',
         PV: {
@@ -111,7 +112,7 @@ module.exports= {
             multiplier:2
         },
         weapons:['choose 1 weapon [NORMAL]'],
-        classExpertise:['Alquimia','Cura','Decifrar','Choose 1 art','Choose 4 '],
+        classExpertise:['Alquimia','Cura','Decifrar','Choose 1 art','Choose 4 knowledges'],
         specialHabilities:['Proficiência mágica','Destilar poções','Homúnculo','Proficiência ritualística']
      },{
         class: 'Arqueiro',
@@ -150,7 +151,7 @@ module.exports= {
             attribute:'CON',
             multiplier:2
         },
-        weapons:['choose 2 weapons at [GOOD]'],
+        weapons: ['choose 2 weapons at [GOOD]'],
         classExpertise:['Escalar', 'Montaria','Rastreio','Sobrevivencia'],
         specialHabilities:functions.attributeSelector(["Esquiva sobrenatural","Fúria barbara","Movimento rápido","Pontos de vida","Proficiência com Armaduras"],2)
     },{
@@ -193,8 +194,61 @@ module.exports= {
         weapons:['choose 3 weapons at [GOOD]'],
         classExpertise:['Armadilhas','Conhecimentos[GEOGRAFIA]','Falsificação','Fechaduras','Furtividade','Rastreio','Sobrevivência'],
         specialHabilities:functions.attributeSelector(["Ataque furtivo",'Maestria em rastreio','Movimento rápido','Precisão em arremessos','Rapidez na iniciativa','Sono dos justos'],2)
+    },{
+        class: 'Clérigo / Sacerdote',
+        PV: {
+            points:10,
+            attribute:'CON',
+            multiplier:2
+           },
+        weapons:["Choose 2 weapons at GOOD"],
+        classExpertise:["Conhecimentos[RELIGIÃO]","Cura","Decifrar","Idiomas"],
+        specialHabilities:functions.attributeSelector(["Abençoar","Afastar Mortos-vivos","Água benta","Cura pelas mãos","Escolhido pelo divino"],1,["Proficiência Ritualística"])
+    },{
+        class: 'Demonologista',
+        PV: {
+            points:9,
+            attribute:'CON',
+            multiplier:2
+           },
+        weapons:['Adaga',"Choose 1 weapon[Normal]"],
+        classExpertise:['Conhecimentos[MAGIAS ARKANAS] ','Decifrar',"Idioma","Choose 2 knowledges[GOOD] and 2 Manipulation[GOOD]"],
+        specialHabilities:functions.attributeSelector(["Afastar Mortos-vivos",'Canalizador','Controlar Mortos-vivos','Enxergar espiritos','Exorcismo','Ferir mortos-vivos','Grande conjurador'],2,["Proficiencia ritualística","Aptidão Arkana"])
+    },{
+        class:"Druida",
+        PV:{
+            points:10,
+            attribute:'CON',
+            multiplier:2
+           },
+        weapons:['Foice druídica','Choose 1 weapon[NORMAL]'],
+        classExpertise:['Conhecimentos[RELIGIÃO] ','Cura ','Decifrar','Herbalismo','Idiomas'],
+        specialHabilities:functions.attributeSelector(["Afastar animais",'Amizade com animais','Animal que fala','Conversar com animais','Conversar com plantas','Cura pelas mãos','Destilar poções','Familiar'],2,['Proficiência Arkana','Proficiência Ritualística'])
+    },{
+        class:"Ladrão / Ladino",
+        PV:{
+            points:8,
+            attribute:'CON',
+            multiplier:2
+           },
+        weapons:["Choose 1 weapon at [GOOD] and 1 [NORMAL]"],
+        classExpertise:['Acrobacias','Armadilhas','Artes[DISFARCE]','Escalar','Falsificação','Fechaduras','Furtar','Furtividade'],
+        specialHabilities:functions.attributeSelector(['Ataque furtivo','Esquiva sobrenatural','Movimento rápido','Precisão de arremessos','Habilidade com cordas'],1)
     },
     ],
+    weapons:[{
+        weapon:"Adaga",
+        origin: "all"
+    },{
+        weapon:"LongSword",
+        origin: "all"
+    },{
+        weapon:"Claymore",
+        origin: "all"
+    },{
+        weapon:"Katana",
+        origin: "all"
+    }],
     names : [
         "Rodrick","Jeremy", "Joseph","Mercy","Lucius","Jesse","Lucy"
     ],

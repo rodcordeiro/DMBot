@@ -15,19 +15,19 @@ module.exports = {
     ,
     attributeSelector(possibilities,need,pre){
         if(pre){
-            specialHabilities = [pre]
+            selectedAttributes = [pre]
         }else{
-            specialHabilities = []
+            selectedAttributes = []
         }
-        specialHabilities.push(this.randSelect(possibilities))
+        selectedAttributes.push(this.randSelect(possibilities))
         for(i = 1; i <= need -1; i++){
-            specialHabilities.push(this.attributeFilter(specialHabilities,possibilities))
+            selectedAttributes.push(this.attributeFilter(selectedAttributes,possibilities))
         }
-        return specialHabilities
+        return selectedAttributes
     },
     attributeFilter(validate,possibilities){
         var option = this.randSelect(possibilities)
-        if (!validate.includes(option) || option !== ""){
+        if (!validate.includes(option) && option !== ""){
             return option
         } else {
             
