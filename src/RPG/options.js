@@ -250,9 +250,9 @@ module.exports= {
         origin: "all"
     }],
     names : [
-        "Rodrick","Jeremy", "Joseph","Mercy","Lucius","Jesse","Lucy"
+        "Rodrick","Jeremy", "Joseph","Mercy","Lucius","Jesse","Lucy","Olawell","Talwen","Tylor",'James','Grindyraham','Jhonny','Jhon','Wilson','Cori','Kramper','Johat'
     ],
     nicknames : [
-        "CorreVentos", "AguaEscura", "NoiteSangrenta","McCree","StormWind","Bearmantle","Sanguinaar","McGonnac","Lovelace","Lovegood","Scratch","Morningstar","Spellman"
+        "CorreVentos", "AguaEscura", "NoiteSangrenta","McCree","StormWind","Bearmantle","Sanguinaar","McGonnac","Lovelace","Lovegood","Scratch","Morningstar","Spellman","Baphasia","Crawfordanic",'Grindyraham','Kramper'
     ],
 }
