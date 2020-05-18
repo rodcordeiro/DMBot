@@ -1,5 +1,6 @@
 const options = require('../RPG/options')
 const functions = require('../RPG/functions')
+const Discord = require('discord.js');
 
 class Character{
     constructor(){
@@ -33,30 +34,43 @@ const execute = (bot,msg,args)=>{
     var character = new Character();
     functions.updateAttributes(character);
 
-    const characterSheet = `Aqui está sua ficha:\n
-_**Nome:**_ ${character.name}      _**Sexo:**_ ${character.gender}*
-
-_**Raça:**_ ${character.race.race}
-_**Habilidades de raça:**_ ${character.racialSkills}
-
-_**Classe:**_ ${character.class.class}
-_**Perícias de classe:**_ ${character.classExpertise}
-_**Habilidades especiais:**_ ${character.specialHabilities}
-
-**---Stats**
-_**Pontos de Vida:**_ ${character.stats.PV}
-
-**---Atributos**
- _**Força:**_ ${character.attributes.FR}  _**Constituição:**_ ${character.attributes.CON},
- _**Destreza:**_ ${character.attributes.DEX}  _**Agilidade:**_ ${character.attributes.AGI}   
- _**Inteligência:**_ ${character.attributes.INT}    _**Força de Vontade:**_ ${character.attributes.WILL},
- _**Percepção:**_ ${character.attributes.PER}   _**Carisma:**_ ${character.attributes.CAR}
-
-**--Armas**
-${character.weapons}
-`;
-
-    return msg.reply(characterSheet)
+const characterEmbed = new Discord.MessageEmbed()
+	.setColor('#0099ff')
+	.setTitle(character.name)
+	// .setURL('https://discord.js.org/')
+	.setAuthor(msg.author.username, `https://cdn.discordapp.com/avatars/${msg.author.id}/${msg.author.avatar}.png`)
+	.setDescription('RPG Character automatically created')
+    .setThumbnail('https://rodcordeiro.github.io/shares/img/privateinvestocat.jpg')
+	.addFields(
+		{ name: 'Race', value: character.race.race, inline: true },
+        { name: 'Gender', value: character.gender, inline: true },
+        { name: 'Racial skills', value: character.racialSkills },
+		{ name: '\u200B', value: '\u200B' },
+        
+        { name: 'Class', value: character.class.class, inline: true },
+        { name: 'Class Expertise', value: character.class.classExpertise, inline: true },
+        { name: 'Special habilities', value: character.specialHabilities, inline: true },
+        { name: '\u200B', value: '\u200B' },
+        { name: '\u200B', value: '**Status**' },
+        { name: 'Life Points', value: character.stats.PV },
+        { name: 'Força', value: character.attributes.FR, inline: true },
+        { name: 'Constituição', value: character.attributes.CON, inline: true },
+        { name: 'Destreza', value: character.attributes.DEX, inline: true },
+        { name: 'Agilidade', value: character.attributes.AGI, inline: true },
+        { name: 'Inteligência', value: character.attributes.INT, inline: true },
+        { name: 'Força de vontade', value: character.attributes.WILL, inline: true },
+        { name: 'Percepção', value: character.attributes.PER, inline: true },
+        { name: 'Carisma', value: character.attributes.CAR, inline: true },
+        { name: '\u200B', value: '\u200B' },
+        { name: 'Weapons', value: character.weapons },
+		
+	)
+	// .setImage('https://i.imgur.com/wSTFkRM.png')
+    // .attachFiles(['https://rodcordeiro.github.io/shares/img/privateinvestocat.jpg'])
+    .setFooter('Created by DMBot', 'https://rodcordeiro.github.io/shares/img/logo.png');
+    
+    
+    return msg.reply(characterEmbed)
 }
 module.exports={
     name:"create",
