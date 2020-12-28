@@ -39,3 +39,4 @@ bot.on("message",(msg)=> {
         return msg.reply("é o que fi?!")
     }
 })
+

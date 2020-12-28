@@ -65,7 +65,7 @@ const characterEmbed = new Discord.MessageEmbed()
         { name: 'Weapons', value: character.weapons },
 		
 	)
-	// .setImage('https://i.imgur.com/wSTFkRM.png')
+	.setImage('https://i.imgur.com/wSTFkRM.png')
     // .attachFiles(['https://rodcordeiro.github.io/shares/img/privateinvestocat.jpg'])
     .setFooter('Created by DMBot', 'https://rodcordeiro.github.io/shares/img/logo.png');
     

@@ -1,4 +1,5 @@
 const Discord = require('discord.js');
+const messager = require('../Functions/messager');
 
 const execute = (bot,msg,args)=>{
     
@@ -22,12 +23,16 @@ const execute = (bot,msg,args)=>{
 	.setImage('https://i.imgur.com/wSTFkRM.png')
 	.setTimestamp()
 	.setFooter('Some footer text here', 'https://i.imgur.com/wSTFkRM.png');
-    
+
+messager(bot)
+
     const attachEmbed = new Discord.MessageEmbed()
 	.setTitle('Image embed')
 	.attachFiles(['./src/result.png'])
 	.setImage('attachment://result.png');
     return msg.reply(attachEmbed);
+
+  
 }
 module.exports={
     name:"teste",
