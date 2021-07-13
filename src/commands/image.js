@@ -20,13 +20,13 @@ const execute = async (bot,msg,args) => {
   const canvas = Canvas.createCanvas(700, 250);
 	const ctx = canvas.getContext('2d');
 
-	const background = await Canvas.loadImage('https://rodcordeiro.github.io/shares/img/deathstar.jpg');
+	const background = await Canvas.loadImage('https://rodcordeiro.github.io/shares/img/hacker.jpg'); //https://rodcordeiro.github.io/shares/img/
 	ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
 
 	ctx.strokeStyle = '#74037b';
 	ctx.strokeRect(0, 0, canvas.width, canvas.height);
 
-	ctx.font = '28px sans-serif';
+	ctx.font = '28px Sans-serif';
 	ctx.fillStyle = '#ffffff';
 	ctx.fillText('Welcome to the server,', canvas.width / 2.5, canvas.height / 3.5);
 

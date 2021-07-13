@@ -25,7 +25,7 @@ const execute = (bot,msg,args)=>{
 	.setTimestamp()
 	.setFooter('Some footer text here', 'https://i.imgur.com/wSTFkRM.png');
 
-messager(bot)
+
 
     const attachEmbed = new Discord.MessageEmbed()
 	.setTitle('Image embed')

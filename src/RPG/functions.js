@@ -50,5 +50,7 @@ module.exports = {
             character.attributes[attribute] = character.attributes[attribute] + (2 * d6)
         }
         character.stats.PV = (character.class.PV.points + (character.class.PV.multiplier * character.attributes[character.class.PV.attribute])) + this.geraPV(); 
+        character.class = character.class.class
+        character.race = character.race.race
     },
 }

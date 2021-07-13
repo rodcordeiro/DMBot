@@ -42,13 +42,13 @@ const characterEmbed = new Discord.MessageEmbed()
 	.setDescription('RPG Character automatically created')
     .setThumbnail('https://rodcordeiro.github.io/shares/img/privateinvestocat.jpg')
 	.addFields(
-		{ name: 'Race', value: character.race.race, inline: true },
+		{ name: 'Race', value: character.race, inline: true },
         { name: 'Gender', value: character.gender, inline: true },
         { name: 'Racial skills', value: character.racialSkills },
 		{ name: '\u200B', value: '\u200B' },
         
-        { name: 'Class', value: character.class.class, inline: true },
-        { name: 'Class Expertise', value: character.class.classExpertise, inline: true },
+        { name: 'Class', value: character.class, inline: true },
+        { name: 'Class Expertise', value: character.classExpertise, inline: true },
         { name: 'Special habilities', value: character.specialHabilities, inline: true },
         { name: '\u200B', value: '\u200B' },
         { name: '\u200B', value: '**Status**' },
@@ -65,8 +65,7 @@ const characterEmbed = new Discord.MessageEmbed()
         { name: 'Weapons', value: character.weapons },
 		
 	)
-	// .setImage('https://i.imgur.com/wSTFkRM.png')
-    // .attachFiles(['https://rodcordeiro.github.io/shares/img/privateinvestocat.jpg'])
+	.setImage('https://i.imgur.com/wSTFkRM.png')
     .setFooter('Created by DMBot', 'https://rodcordeiro.github.io/shares/img/logo.png');
     
     
