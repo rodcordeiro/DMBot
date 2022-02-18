@@ -1,22 +1,26 @@
-import { Client, Intents, Message } from "discord.js";
-
-const dotenv = require("dotenv");
-const fs = require("fs");
-const path = require("path");
+import dotenv from "dotenv";
 dotenv.config();
+const { SlashCommandBuilder } = require("@discordjs/builders");
+const { REST } = require("@discordjs/rest");
+const { Routes } = require("discord-api-types/v9");
+const { clientId, guildId, Token } = process.env;
 
-const client = new Client({ intents: [Intents.FLAGS.GUILDS] });
 
-client.on("ready", () => {
-  console.log(`Logged in as ${client.user.tag}!`);
-});
+const commands = [
+  new SlashCommandBuilder()
+    .setName("ping")
+    .setDescription("Replies with pong!"),
+  new SlashCommandBuilder()
+    .setName("server")
+    .setDescription("Replies with server info!"),
+  new SlashCommandBuilder()
+    .setName("user")
+    .setDescription("Replies with user info!"),
+].map((command) => command.toJSON());
 
-client.on("messageCreate", async (msg: Message) => {
-  console.log({ msg });
-  msg.react("✌️");
-});
+const rest = new REST({ version: "9" }).setToken(token);
 
-client.on("messageCreate", (msg: any) => {
-  console.log("msg");
-});
-client.login(process.env.TOKEN);
+rest
+  .put(Routes.applicationGuildCommands(clientId, guildId), { body: commands })
+  .then(() => console.log("Successfully registered application commands."))
+  .catch(console.error);
