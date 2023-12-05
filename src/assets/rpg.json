@@ -1,0 +1,582 @@
+{
+  "races": [
+    {
+      "name": "Human",
+      "description": "Versatile and ambitious beings with diverse abilities.",
+      "modifiers": {
+        "strength": 1,
+        "dexterity": 1,
+        "constitution": 1,
+        "intelligence": 1,
+        "wisdom": 1,
+        "charisma": 1
+      },
+      "racialSkills": [
+        "Versatile Heritage: Gain proficiency in one skill of your choice."
+      ],
+      "weakness": "No specific weaknesses.",
+      "features": [
+        "Extra Language: Learn one additional language of your choice.",
+        "Adaptable: Gain an additional feat at 1st level."
+      ]
+    },
+    {
+      "name": "Elf",
+      "description": "Graceful and long-lived, with a deep connection to nature.",
+      "modifiers": {
+        "dexterity": 2,
+        "intelligence": 1
+      },
+      "racialSkills": [
+        "Darkvision: Accustomed to twilit forests and the night sky.",
+        "Keen Senses: Proficiency in Perception skill."
+      ],
+      "weakness": "Vulnerable to enchantments.",
+      "features": [
+        "Trance: Meditate deeply for 4 hours instead of sleeping.",
+        "Fey Ancestry: Advantage on saving throws against being charmed."
+      ]
+    },
+    {
+      "name": "Dwarf",
+      "description": "Sturdy and skilled craftsmen, known for their resilience.",
+      "modifiers": {
+        "constitution": 2,
+        "wisdom": 1
+      },
+      "racialSkills": [
+        "Darkvision: Accustomed to life underground.",
+        "Dwarven Resilience: Advantage on saving throws against poison.",
+        "Dwarven Combat Training: Proficiency with battle axes, hand axes, throwing hammers, and warhammers."
+      ],
+      "weakness": "Reduced speed.",
+      "features": [
+        "Stonecunning: Add double proficiency bonus to History checks related to stonework.",
+        "Dwarven Toughness: Gain extra hit points for each level."
+      ]
+    },
+    {
+      "name": "Halfling",
+      "description": "Small and nimble folk, adept at avoiding danger.",
+      "modifiers": {
+        "dexterity": 2,
+        "charisma": 1
+      },
+      "racialSkills": [
+        "Lucky: When you roll a 1 on an attack roll, ability check, or saving throw, you can reroll the die.",
+        "Brave: Advantage on saving throws against being frightened."
+      ],
+      "weakness": "No specific weaknesses.",
+      "features": [
+        "Halfling Nimbleness: Move through the space of any creature that is of a size larger than yours.",
+        "Naturally Stealthy: Can attempt to hide even when obscured only by a creature that is at least one size larger."
+      ]
+    },
+    {
+      "name": "Dragonborn",
+      "description": "Proud and honorable beings with draconic ancestry.",
+      "modifiers": {
+        "strength": 2,
+        "charisma": 1
+      },
+      "racialSkills": [
+        "Draconic Ancestry: Breath weapon and resistance based on ancestry."
+      ],
+      "weakness": "No specific weaknesses.",
+      "features": [
+        "Breath Weapon: Exhale destructive energy as a breath weapon.",
+        "Draconic Resistance: Gain resistance to the damage type associated with your draconic ancestry."
+      ]
+    },
+    {
+      "name": "Tiefling",
+      "description": "Infernal-blooded creatures with a mysterious and alluring aura.",
+      "modifiers": {
+        "intelligence": 1,
+        "charisma": 2
+      },
+      "racialSkills": [
+        "Darkvision: Accustomed to the dark.",
+        "Hellish Resistance: Resistance to fire damage."
+      ],
+      "weakness": "No specific weaknesses.",
+      "features": [
+        "Infernal Legacy: Know the Thaumaturgy cantrip. At higher levels, gain additional spells.",
+        "Hellish Rebuke: React with hellish flames when damaged by a creature within 60 feet."
+      ]
+    },
+    {
+      "name": "Gnome",
+      "description": "Inventive and curious individuals, often with a love for illusions.",
+      "modifiers": {
+        "intelligence": 2,
+        "constitution": 1
+      },
+      "racialSkills": [
+        "Darkvision: Accustomed to the subterranean realms.",
+        "Gnome Cunning: Advantage on all Intelligence, Wisdom, and Charisma saving throws against magic."
+      ],
+      "weakness": "No specific weaknesses.",
+      "features": [
+        "Gnome Cunning: Advantage on all Intelligence, Wisdom, and Charisma saving throws against magic.",
+        "Artificer's Lore: Double proficiency bonus on History checks related to magic items, alchemical objects, or technological devices."
+      ]
+    },
+    {
+      "name": "Half-elf",
+      "description": "A mix of human and elf blood, blending the best of both worlds.",
+      "modifiers": {
+        "charisma": 2,
+        "choice": 2
+      },
+      "racialSkills": [
+        "Darkvision: Accustomed to twilit forests and the night sky.",
+        "Fey Ancestry: Advantage against being charmed.",
+        "Skill Versatility: Gain proficiency in two skills of your choice."
+      ],
+      "weakness": "No specific weaknesses.",
+      "features": [
+        "Fey Ancestry: Advantage on saving throws against being charmed.",
+        "Versatile Heritage: Gain proficiency in two skills of your choice."
+      ]
+    },
+    {
+      "name": "Half-orc",
+      "description": "Powerful and fierce warriors with orc and human heritage.",
+      "modifiers": {
+        "strength": 2,
+        "constitution": 1
+      },
+      "racialSkills": [
+        "Darkvision: Accustomed to life in the wild.",
+        "Menacing: Intimidation skill proficiency.",
+        "Relentless Endurance: When reduced to 0 hit points but not killed outright, drop to 1 hit point instead."
+      ],
+      "weakness": "No specific weaknesses.",
+      "features": [
+        "Relentless Endurance: When reduced to 0 hit points but not killed outright, drop to 1 hit point instead.",
+        "Savage Attacks: Roll an additional damage die when scoring a critical hit."
+      ]
+    },
+    {
+      "name": "Aasimar",
+      "description": "Celestial-touched beings with a divine connection.",
+      "modifiers": {
+        "charisma": 2,
+        "wisdom": 1
+      },
+      "racialSkills": [
+        "Darkvision: Accustomed to seeing in the dark.",
+        "Celestial Resistance: Resistance to necrotic and radiant damage."
+      ],
+      "weakness": "No specific weaknesses.",
+      "features": [
+        "Celestial Legacy: Know the Light cantrip. At higher levels, gain additional spells.",
+        "Healing Hands: Touch a creature to heal it with celestial energy."
+      ]
+    }
+  ],
+  "classes": [
+    {
+      "name": "Barbarian",
+      "description": "Fierce warriors who rely on instinct and raw power.",
+      "hitPoints": {
+        "points": 12,
+        "attribute": "CON",
+        "multiplier": 2
+      },
+      "classExpertise": [
+        "Simple weapons",
+        "Martial weapons",
+        "Light armor",
+        "Medium armor",
+        "Shields"
+      ],
+      "weapons": [
+        "Greataxe",
+        "Handaxe",
+        "Javelin"
+      ],
+      "specialAbilities": [
+        "Rage: Bonus to damage and resistance to bludgeoning, piercing, and slashing damage."
+      ],
+      "features": [
+        "Unarmored Defense: AC calculation using Dexterity and Constitution.",
+        "Reckless Attack: Gain advantage on melee attacks but suffer advantage on attacks against you."
+      ]
+    },
+    {
+      "name": "Bard",
+      "description": "Charismatic performers who use magic and music.",
+      "hitPoints": {
+        "points": 8,
+        "attribute": "CON",
+        "multiplier": 2
+      },
+      "classExpertise": [
+        "Simple weapons",
+        "Hand crossbows",
+        "Longswords",
+        "Rapiers",
+        "Shortswords",
+        "Light armor"
+      ],
+      "weapons": [
+        "Dagger",
+        "Rapier",
+        "Shortsword"
+      ],
+      "specialAbilities": [
+        "Bardic Inspiration: Bonus to an ally's ability check, attack roll, or saving throw."
+      ],
+      "features": [
+        "Spellcasting: Cast spells drawn from the bard spell list.",
+        "Jack of All Trades: Add half proficiency to any ability check you make that doesn't already include your proficiency bonus."
+      ]
+    },
+    {
+      "name": "Cleric",
+      "description": "Divine spellcasters devoted to a deity or higher power.",
+      "hitPoints": {
+        "points": 10,
+        "attribute": "CON",
+        "multiplier": 2
+      },
+      "classExpertise": [
+        "Simple weapons",
+        "Medium armor",
+        "Shields"
+      ],
+      "weapons": [
+        "Mace",
+        "Warhammer"
+      ],
+      "specialAbilities": [
+        "Divine Domain: Unique set of spells and abilities based on chosen domain."
+      ],
+      "features": [
+        "Spellcasting: Cast divine spells.",
+        "Channel Divinity: Use divine energy for special effects related to your domain."
+      ]
+    },
+    {
+      "name": "Druid",
+      "description": "Mystic nature-wielders with the ability to shape-shift.",
+      "hitPoints": {
+        "points": 8,
+        "attribute": "CON",
+        "multiplier": 2
+      },
+      "classExpertise": [
+        "Club",
+        "Dagger",
+        "Dart",
+        "Javelin",
+        "Mace",
+        "Quarterstaff",
+        "Scimitar",
+        "Sickle",
+        "Sling",
+        "Spear",
+        "Light armor",
+        "Medium armor",
+        "Shields"
+      ],
+      "weapons": [
+        "Scimitar",
+        "Sling",
+        "Quarterstaff"
+      ],
+      "specialAbilities": [
+        "Wild Shape: Transform into beasts."
+      ],
+      "features": [
+        "Druidic: Speak the secret language of druids.",
+        "Natural Recovery: Regain spell slots during a short rest."
+      ]
+    },
+    {
+      "name": "Fighter",
+      "description": "Skilled warriors with a mastery of combat techniques.",
+      "hitPoints": {
+        "points": 10,
+        "attribute": "CON",
+        "multiplier": 2
+      },
+      "classExpertise": [
+        "Simple weapons",
+        "Martial weapons",
+        "All armor types",
+        "Shields"
+      ],
+      "weapons": [
+        "Longsword",
+        "Shortbow",
+        "Warhammer"
+      ],
+      "specialAbilities": [
+        "Fighting Style: Choose a specific combat style for bonuses."
+      ],
+      "features": [
+        "Second Wind: Heal yourself in the midst of battle.",
+        "Action Surge: Take an additional action on your turn."
+      ]
+    },
+    {
+      "name": "Monk",
+      "description": "Disciplined and agile martial artists.",
+      "hitPoints": {
+        "points": 8,
+        "attribute": "CON",
+        "multiplier": 2
+      },
+      "classExpertise": [
+        "Simple weapons",
+        "Shortswords"
+      ],
+      "weapons": [
+        "Dagger",
+        "Shortsword"
+      ],
+      "specialAbilities": [
+        "Unarmored Defense: AC calculation using Dexterity and Wisdom."
+      ],
+      "features": [
+        "Martial Arts: Use Dexterity for attack and damage rolls with unarmed strikes and monk weapons.",
+        "Ki: Harness inner energy for various effects."
+      ]
+    },
+    {
+      "name": "Paladin",
+      "description": "Holy knights sworn to uphold justice and righteousness.",
+      "hitPoints": {
+        "points": 10,
+        "attribute": "CON",
+        "multiplier": 2
+      },
+      "classExpertise": [
+        "Simple weapons",
+        "Martial weapons",
+        "All armor types",
+        "Shields"
+      ],
+      "weapons": [
+        "Longsword",
+        "Warhammer"
+      ],
+      "specialAbilities": [
+        "Divine Sense: Detect the presence of celestial, fiendish, or undead beings."
+      ],
+      "features": [
+        "Lay on Hands: Heal wounds by touch.",
+        "Divine Smite: Expends spell slots to deal extra damage on attacks."
+      ]
+    },
+    {
+      "name": "Ranger",
+      "description": "Expert trackers and archers who excel in the wilderness.",
+      "hitPoints": {
+        "points": 10,
+        "attribute": "CON",
+        "multiplier": 2
+      },
+      "classExpertise": [
+        "Simple weapons",
+        "Martial weapons",
+        "Light armor",
+        "Medium armor",
+        "Shields"
+      ],
+      "weapons": [
+        "Shortbow",
+        "Spear",
+        "Longsword"
+      ],
+      "specialAbilities": [
+        "Favored Enemy: Gain bonuses when tracking specific creature types."
+      ],
+      "features": [
+        "Natural Explorer: Navigate through various terrains with ease.",
+        "Primeval Awareness: Detect creatures in your favored terrain."
+      ]
+    },
+    {
+      "name": "Rogue",
+      "description": "Sneaky and cunning individuals skilled in stealth and subterfuge.",
+      "hitPoints": {
+        "points": 8,
+        "attribute": "CON",
+        "multiplier": 2
+      },
+      "classExpertise": [
+        "Simple weapons",
+        "Hand crossbows",
+        "Longswords",
+        "Rapiers",
+        "Shortswords",
+        "Light armor"
+      ],
+      "weapons": [
+        "Dagger",
+        "Rapier",
+        "Shortsword"
+      ],
+      "specialAbilities": [
+        "Sneak Attack: Extra damage when you have advantage on an attack."
+      ],
+      "features": [
+        "Thieves' Cant: Speak a secret language of thieves.",
+        "Evasion: Take half damage from certain area effects."
+      ]
+    },
+    {
+      "name": "Wizard",
+      "description": "Scholars and spellcasters who harness the power of arcane magic.",
+      "hitPoints": {
+        "points": 6,
+        "attribute": "CON",
+        "multiplier": 2
+      },
+      "classExpertise": [
+        "Daggers",
+        "Darts",
+        "Slings",
+        "Quarterstaffs",
+        "Light armor"
+      ],
+      "weapons": [
+        "Dagger",
+        "Quarterstaff"
+      ],
+      "specialAbilities": [
+        "Arcane Recovery: Recover expended spell slots during a short rest."
+      ],
+      "features": [
+        "Spellbook: Record and prepare spells from your spellbook.",
+        "Arcane Tradition: Choose a school of magic for additional benefits."
+      ]
+    }
+  ],
+  "weapons": [
+    {
+      "name": "Longsword",
+      "type": "Melee",
+      "damage": "1d8 slashing",
+      "origin": "Common"
+    },
+    {
+      "name": "Shortbow",
+      "type": "Ranged",
+      "damage": "1d6 piercing",
+      "origin": "Common"
+    },
+    {
+      "name": "Staff",
+      "type": "Melee",
+      "damage": "1d6 bludgeoning",
+      "origin": "Common"
+    },
+    {
+      "name": "Dagger",
+      "type": "Melee/Ranged",
+      "damage": "1d4 piercing",
+      "origin": "Common"
+    },
+    {
+      "name": "Warhammer",
+      "type": "Melee",
+      "damage": "1d8 bludgeoning",
+      "origin": "Dwarven"
+    },
+    {
+      "name": "Crossbow",
+      "type": "Ranged",
+      "damage": "1d8 piercing",
+      "origin": "Common"
+    },
+    {
+      "name": "Greatsword",
+      "type": "Melee",
+      "damage": "2d6 slashing",
+      "origin": "Common"
+    },
+    {
+      "name": "Spear",
+      "type": "Melee/Ranged",
+      "damage": "1d6 piercing",
+      "origin": "Common"
+    },
+    {
+      "name": "Mace",
+      "type": "Melee",
+      "damage": "1d6 bludgeoning",
+      "origin": "Common"
+    },
+    {
+      "name": "Quarterstaff",
+      "type": "Melee",
+      "damage": "1d6 bludgeoning",
+      "origin": "Common"
+    },
+    {
+      "name": "Handaxe",
+      "type": "Melee/Ranged",
+      "damage": "1d6 slashing",
+      "origin": "Common"
+    },
+    {
+      "name": "Shortsword",
+      "type": "Melee",
+      "damage": "1d6 piercing",
+      "origin": "Common"
+    },
+    {
+      "name": "Flail",
+      "type": "Melee",
+      "damage": "1d8 bludgeoning",
+      "origin": "Common"
+    },
+    {
+      "name": "Greatclub",
+      "type": "Melee",
+      "damage": "1d8 bludgeoning",
+      "origin": "Common"
+    },
+    {
+      "name": "Whip",
+      "type": "Melee/Ranged",
+      "damage": "1d4 slashing",
+      "origin": "Common"
+    },
+    {
+      "name": "Javelin",
+      "type": "Melee/Ranged",
+      "damage": "1d6 piercing",
+      "origin": "Common"
+    },
+    {
+      "name": "Rapier",
+      "type": "Melee",
+      "damage": "1d8 piercing",
+      "origin": "Common"
+    },
+    {
+      "name": "Sickle",
+      "type": "Melee",
+      "damage": "1d4 slashing",
+      "origin": "Common"
+    },
+    {
+      "name": "Lance",
+      "type": "Melee",
+      "damage": "1d12 piercing",
+      "origin": "Common"
+    },
+    {
+      "name": "Polearm",
+      "type": "Melee",
+      "damage": "1d10 slashing",
+      "origin": "Common"
+    }
+  ]
+}

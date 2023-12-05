@@ -1,26 +1,34 @@
-import dotenv from "dotenv";
-dotenv.config();
-const { SlashCommandBuilder } = require("@discordjs/builders");
-const { REST } = require("@discordjs/rest");
-const { Routes } = require("discord-api-types/v9");
-const { clientId, guildId, Token } = process.env;
+import 'reflect-metadata';
+import { ActivityType } from 'discord.js';
 
+import { config } from './common/config';
+import { client } from './core/discord/client.discord';
+import './commands';
+import './core/events';
+// import { AppDataSource } from './database';
 
-const commands = [
-  new SlashCommandBuilder()
-    .setName("ping")
-    .setDescription("Replies with pong!"),
-  new SlashCommandBuilder()
-    .setName("server")
-    .setDescription("Replies with server info!"),
-  new SlashCommandBuilder()
-    .setName("user")
-    .setDescription("Replies with user info!"),
-].map((command) => command.toJSON());
-
-const rest = new REST({ version: "9" }).setToken(token);
-
-rest
-  .put(Routes.applicationGuildCommands(clientId, guildId), { body: commands })
-  .then(() => console.log("Successfully registered application commands."))
-  .catch(console.error);
+// AppDataSource.initialize().then(() =>
+  client.login(config.app.TOKEN).then(() => {
+    setInterval(
+      () => {
+        const timer = setTimeout(
+          () => {
+            client.user?.setActivity('with some goblins...');
+            clearTimeout(timer);
+          },
+          2 * (60 * 1000),
+        );
+        client.user?.setPresence({
+          status: 'online',
+          activities: [
+            {
+              name: '/help',
+              type: ActivityType.Listening,
+            },
+          ],
+        });
+      },
+      10 * (60 * 1000),
+    );
+  })
+// );
