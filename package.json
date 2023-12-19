@@ -8,8 +8,8 @@
     "start:dev": "tsx watch src/index.ts",
     "prebuild": "npm run format && rimraf dist",
     "build": "tsc -b .",
-    "format": "npm run lint && npm run prettier",
-    "prettier": "prettier --ignore-path .eslintignore --write .",
+    "format": "npm run lint && npm run pretty",
+    "pretty": "prettier --ignore-path .eslintignore --write .",
     "lint": "eslint --ignore-path .eslintignore --fix --ext .ts,.tsx,.js,.jsx ."
   },
   "repository": {
@@ -25,13 +25,14 @@
   "homepage": "https://github.com/rodcordeiro/DMBot#readme",
   "dependencies": {
     "@discordjs/builders": "^1.6.5",
+    "@rodcordeiro/lib": "^1.1.2",
+    "canvas": "^2.8.0",
     "discord.js": "^14.13.0",
     "dotenv": "^16.3.1",
     "mysql": "^2.18.1",
     "pagination.djs": "^4.0.12",
     "reflect-metadata": "^0.1.13",
-    "typeorm": "^0.3.17",
-    "canvas": "^2.8.0"
+    "typeorm": "^0.3.17"
   },
   "devDependencies": {
     "@types/node": "^20.8.10",

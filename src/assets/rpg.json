@@ -1,4 +1,43 @@
 {
+  "names": [
+    "Rodrick",
+    "Jeremy",
+    "Joseph",
+    "Mercy",
+    "Lucius",
+    "Jesse",
+    "Lucy",
+    "Olawell",
+    "Talwen",
+    "Tylor",
+    "James",
+    "Grindyraham",
+    "Jhonny",
+    "Jhon",
+    "Wilson",
+    "Cori",
+    "Kramper",
+    "Johat"
+  ],
+  "nicknames": [
+    "CorreVentos",
+    "AguaEscura",
+    "NoiteSangrenta",
+    "McCree",
+    "StormWind",
+    "Bearmantle",
+    "Sanguinaar",
+    "McGonnac",
+    "Lovelace",
+    "Lovegood",
+    "Scratch",
+    "Morningstar",
+    "Spellman",
+    "Baphasia",
+    "Crawfordanic",
+    "Grindyraham",
+    "Kramper"
+  ],
   "races": [
     {
       "name": "Human",
@@ -192,11 +231,7 @@
         "Medium armor",
         "Shields"
       ],
-      "weapons": [
-        "Greataxe",
-        "Handaxe",
-        "Javelin"
-      ],
+      "weapons": ["Greataxe", "Handaxe", "Javelin"],
       "specialAbilities": [
         "Rage: Bonus to damage and resistance to bludgeoning, piercing, and slashing damage."
       ],
@@ -221,11 +256,7 @@
         "Shortswords",
         "Light armor"
       ],
-      "weapons": [
-        "Dagger",
-        "Rapier",
-        "Shortsword"
-      ],
+      "weapons": ["Dagger", "Rapier", "Shortsword"],
       "specialAbilities": [
         "Bardic Inspiration: Bonus to an ally's ability check, attack roll, or saving throw."
       ],
@@ -242,15 +273,8 @@
         "attribute": "CON",
         "multiplier": 2
       },
-      "classExpertise": [
-        "Simple weapons",
-        "Medium armor",
-        "Shields"
-      ],
-      "weapons": [
-        "Mace",
-        "Warhammer"
-      ],
+      "classExpertise": ["Simple weapons", "Medium armor", "Shields"],
+      "weapons": ["Mace", "Warhammer"],
       "specialAbilities": [
         "Divine Domain: Unique set of spells and abilities based on chosen domain."
       ],
@@ -282,14 +306,8 @@
         "Medium armor",
         "Shields"
       ],
-      "weapons": [
-        "Scimitar",
-        "Sling",
-        "Quarterstaff"
-      ],
-      "specialAbilities": [
-        "Wild Shape: Transform into beasts."
-      ],
+      "weapons": ["Scimitar", "Sling", "Quarterstaff"],
+      "specialAbilities": ["Wild Shape: Transform into beasts."],
       "features": [
         "Druidic: Speak the secret language of druids.",
         "Natural Recovery: Regain spell slots during a short rest."
@@ -309,11 +327,7 @@
         "All armor types",
         "Shields"
       ],
-      "weapons": [
-        "Longsword",
-        "Shortbow",
-        "Warhammer"
-      ],
+      "weapons": ["Longsword", "Shortbow", "Warhammer"],
       "specialAbilities": [
         "Fighting Style: Choose a specific combat style for bonuses."
       ],
@@ -330,14 +344,8 @@
         "attribute": "CON",
         "multiplier": 2
       },
-      "classExpertise": [
-        "Simple weapons",
-        "Shortswords"
-      ],
-      "weapons": [
-        "Dagger",
-        "Shortsword"
-      ],
+      "classExpertise": ["Simple weapons", "Shortswords"],
+      "weapons": ["Dagger", "Shortsword"],
       "specialAbilities": [
         "Unarmored Defense: AC calculation using Dexterity and Wisdom."
       ],
@@ -360,10 +368,7 @@
         "All armor types",
         "Shields"
       ],
-      "weapons": [
-        "Longsword",
-        "Warhammer"
-      ],
+      "weapons": ["Longsword", "Warhammer"],
       "specialAbilities": [
         "Divine Sense: Detect the presence of celestial, fiendish, or undead beings."
       ],
@@ -387,11 +392,7 @@
         "Medium armor",
         "Shields"
       ],
-      "weapons": [
-        "Shortbow",
-        "Spear",
-        "Longsword"
-      ],
+      "weapons": ["Shortbow", "Spear", "Longsword"],
       "specialAbilities": [
         "Favored Enemy: Gain bonuses when tracking specific creature types."
       ],
@@ -416,11 +417,7 @@
         "Shortswords",
         "Light armor"
       ],
-      "weapons": [
-        "Dagger",
-        "Rapier",
-        "Shortsword"
-      ],
+      "weapons": ["Dagger", "Rapier", "Shortsword"],
       "specialAbilities": [
         "Sneak Attack: Extra damage when you have advantage on an attack."
       ],
@@ -444,10 +441,7 @@
         "Quarterstaffs",
         "Light armor"
       ],
-      "weapons": [
-        "Dagger",
-        "Quarterstaff"
-      ],
+      "weapons": ["Dagger", "Quarterstaff"],
       "specialAbilities": [
         "Arcane Recovery: Recover expended spell slots during a short rest."
       ],
