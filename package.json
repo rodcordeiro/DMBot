@@ -30,7 +30,7 @@
     "discord.js": "^14.13.0",
     "dotenv": "^16.3.1",
     "mysql": "^2.18.1",
-    "pagination.djs": "^4.0.12",
+    "pagination.djs": "^4.0.13",
     "reflect-metadata": "^0.1.13",
     "typeorm": "^0.3.17"
   },
