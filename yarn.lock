@@ -1475,9 +1475,9 @@ p-locate@^5.0.0:
     p-limit "^3.0.2"
 
 pagination.djs@^4.0.12:
-  version "4.0.12"
-  resolved "https://registry.yarnpkg.com/pagination.djs/-/pagination.djs-4.0.12.tgz#3cc01e417d68588e358e0f0270d028eee43b4cd4"
-  integrity sha512-k9B1Yuoshrc7WFr23IpUh4rwY30hQZoPcANg7t8zG4+GR0vvLy0Bz5C5ttqSBkqAvYK2CKXfYGS6GzoRGegJFg==
+  version "4.0.13"
+  resolved "https://registry.yarnpkg.com/pagination.djs/-/pagination.djs-4.0.13.tgz#d9a7a1cd7366b3f280fbaf14233e4f2f89321cde"
+  integrity sha512-eNgzRjb1E2efg1ayYgiNOulfIiESYxPadgk/FORUaIEn9O47hg366ipNgKCHd0tPdYxIDndFl7Q4GKWVsoyEVg==
 
 parent-module@^1.0.0:
   version "1.0.1"
